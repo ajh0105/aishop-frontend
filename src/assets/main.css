@@ -1,0 +1,43 @@
+:root {
+  --color-primary: #2e7d32;
+  --color-bg: #fafafa;
+  --color-border: #e0e0e0;
+  --radius: 8px;
+  --max-width: 1080px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* 모바일 우선: 기본은 1열 */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* 태블릿: 600px 이상 2열 */
+@media (min-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 데스크톱: 900px 이상 3열 */
+@media (min-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
