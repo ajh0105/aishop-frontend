@@ -1,0 +1,1 @@
+import{_ as r,a as t,c as a,b as s}from"./index-BQTDDDhb.js";const o={},c={class:"container"};function i(n,e){return t(),a("div",c,[...e[0]||(e[0]=[s("h1",null,"AI 리뷰 감성 분석 데모",-1),s("iframe",{src:"https://aishopdev-aishop-review-ai.hf.space",frameborder:"0",width:"100%",height:"450"},null,-1)])])}const f=r(o,[["render",i]]);export{f as default};
